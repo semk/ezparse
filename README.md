@@ -6,7 +6,7 @@ A commandline utility to parse text files with ease
 Syntax
 ======
 
-Get all words from a file and print them seperated by commans:
+Get all words from a file and print them separated by commas:
 
     ezparse --all --matching "\w" --join ", " example.txt
 
