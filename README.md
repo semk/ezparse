@@ -14,6 +14,6 @@ Get the first 2 matching IP Addreess from `ifconfig -a` output:
 
     ifconfig -a | ezparse --first --matching "inet (\S+)" --group 1 --slice 3
 
-Print all files strong1arting with `.` (hidden files):
+Print all files starting with `.` (hidden files):
 
-    ezparse --all --matching "\s\.(.+)" --group 1 --join ", " input.txt
+    ls -al | ezparse --all --matching "\s\.(.+)" --group 1 --join ", "
